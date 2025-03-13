@@ -9,41 +9,155 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
 
-
+/*grijs #899CA0 & donkergroen #1C2B32*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
-
-
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-self: center;;
+    margin: 0 auto;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+h1 {
+    color: #1C2B32;
+    font-weight: 700;
+    font-size: 60px;
+}
+h2 {
+    font-size: 25px;
+}
+h6,
+.domain-input,
+.header-button {
+    font-weight: 400;
+    font-size: 8px;
+}
 
-
-
+h1, h2, h3, h4, h5, h6 {
+    color: #1C2B32;
+}
+blockquote p,
+figcaption {
+    font-size: 8px;
+}
 /*////////////////////////
     3. Areas
 ////////////////////////*/
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-
+h2 {
+    margin: 30px auto;
+}
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center
+}
 
+.header-group {
+    margin: 0;
+    height: 750px;
+    flex-direction: column;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 1000px;
+    padding: 55px 0 80px 0;
+}
+.register-domain {
+    margin: 2px;
+}
+
+.domain-input {
+    margin: 15px -5px 0 0;
+    padding: 12px 65px 12px 15px;
+    border: 1px solid;
+    border-color: #1C2B32;
+    color: #1C2B32;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: transparent;
+}
+
+.header-button {
+    padding: 12px 15px 12px 15px;
+    border: 1px solid;
+    border-color: #1C2B32;
+    background-color: #1C2B32;
+    color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
-
+.customer-reviews {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
+.callcenter-group {
+    display: flex;
+    flex-direction: column;
+}
 
+.callcenter {
+    border-radius: 8px;
+    width: 100%;
+}
 
+figure {
+    margin: 25px 0;
+    background-color: white;
+    padding: 32px;
+    border-radius: 7px;
+    box-shadow: 0 8px 24px darkgrey;
+}
 
+figure img {
+    border-radius: 50%;
+    width: 44px;
+    margin: 10px;
+}
+
+figure span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-button {
+    padding: 15px 20px;
+    background-color: #1C2B32;
+    color: white;
+    font-size: 10px;
+    border-radius: 50px;
+    max-width: 130px;
+    }
 /*///////////// 3.4 Faq /////////////*/
-
 
 
 /*///////////// 3.5 Footer /////////////*/
