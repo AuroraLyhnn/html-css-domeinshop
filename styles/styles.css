@@ -9,6 +9,7 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
+
 * {
     border: 0;
     margin: 0;
@@ -20,6 +21,7 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -31,41 +33,54 @@ body {
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+
 h1 {
-    color: #1C2B32;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 110px;
 }
 h2 {
-    font-size: 25px;
+    font-size: 30px;
 }
 h6,
 .domain-input,
 .header-button {
     font-weight: 400;
-    font-size: 8px;
+    font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 p{
     color: #1C2B32;
 }
-blockquote p,
-figcaption {
-    font-size: 8px;
+
+#copyright-text {
+    font-size: 13px;
+    color: white;
 }
+
+p {
+    font-size: 14px;
+    }
+
+a {
+    color: #899CA0;
+}
+
 /*////////////////////////
     3. Areas
 ////////////////////////*/
+
 main {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 h2 {
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
+
 /*///////////// 3.1 Header /////////////*/
+
 header {
     display: flex;
     justify-content: center;
@@ -82,15 +97,16 @@ header {
     justify-items: center;
     align-items: center;
     max-width: 1000px;
-    padding: 55px 0 80px 0;
+    padding: 80px 0 80px 0;
 }
+
 .register-domain {
     margin: 2px;
 }
 
 .domain-input {
-    margin: 15px -5px 0 0;
-    padding: 12px 65px 12px 15px;
+    margin: 30px -5px 0 0;
+    padding: 20px 100px 20px 30px;
     border: 1px solid;
     border-color: #1C2B32;
     color: #1C2B32;
@@ -99,8 +115,12 @@ header {
     background-color: transparent;
 }
 
+.domain-input::placeholder {
+    color: #1C2B32;
+}
+
 .header-button {
-    padding: 12px 15px 12px 15px;
+    padding: 20px 30px 20px 30px;
     border: 1px solid;
     border-color: #1C2B32;
     background-color: #1C2B32;
@@ -109,8 +129,8 @@ header {
     border-bottom-right-radius: 50px;
 }
 
-
 /*///////////// 3.2 Testimonial /////////////*/
+
 .customer-reviews {
     flex-direction: column;
     display: flex;
@@ -119,28 +139,42 @@ header {
 
 
 /*///////////// 3.3 Support /////////////*/
+
 .callcenter-group {
     display: flex;
     flex-direction: column;
 }
 
 .callcenter {
-    border-radius: 8px;
+    border-radius: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 figure {
+    position: relative;
     margin: 25px 0;
     background-color: white;
-    padding: 32px;
+    padding: 55px;
     border-radius: 7px;
     box-shadow: 0 8px 24px darkgrey;
 }
 
-figure img {
+.quotation {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 30px;
+}
+
+blockquote {
+    margin: 0 35px 15px 79px;
+}
+
+.person {
     border-radius: 50%;
     width: 44px;
-    margin: 10px;
+    margin: 10px 25px 10px 80px;
 }
 
 figure span {
@@ -150,14 +184,53 @@ figure span {
 }
 
 .contact-button {
-    padding: 15px 20px;
+    padding: 25px 35px;
+    margin-right: auto;
     background-color: #1C2B32;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     border-radius: 50px;
-    max-width: 130px;
     }
+
+.callcenter-group p {
+    margin: 20px 0 20px 0;
+}
+
 /*///////////// 3.4 Faq /////////////*/
 
+.questions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.most-asked-questions {
+    display: flex;
+    flex-direction: column;
+    justify-conten: center;
+    max-width: 1000px;
+}
+
+.most-asked-questions p {
+    background-color: #899CA0;
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+details {
+    margin: 15px 0;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2B32;
+    color: white;
+    height: 80px;
+    margin: 50px 0 5px 0;
+}
